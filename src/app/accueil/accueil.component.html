@@ -12,4 +12,9 @@ accueil works!
 
 <button [style.background-color]="isValid ? null : 'red'">Save</button>
 
-<button [style.font-size.em]="isImportant ? 2 : 1" >Big</button>
+<button (click)="big()" [style.font-size.em]="isImportant?2:1">Big</button>
+
+<button type="button" 
+(click)="buy()">BUY</button>
+
+<div (drop)="onDrop($event)">BUY</div>
